@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سياسة الخصوصية — صنعة للمهنيين</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #144ad4;
+    --purple: #4b236b;
+    --gold: #f9a825;
+    --bg: #f8f9fc;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Cairo', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--purple), var(--blue));
+    color: white;
+    padding: 48px 24px 36px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: -60px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+  }
+
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; right: -40px;
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+  }
+
+  .logo {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .logo span { color: var(--gold); }
+
+  header p {
+    font-size: 14px;
+    opacity: 0.8;
+    position: relative;
+  }
+
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-top: 12px;
+    position: relative;
+  }
+
+  main {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+
+  .meta-bar {
+    display: flex;
+    gap: 24px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 24px;
+    margin-bottom: 32px;
+    font-size: 13px;
+    color: var(--muted);
+    flex-wrap: wrap;
+  }
+
+  .meta-bar span { display: flex; align-items: center; gap: 6px; }
+
+  .section {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+    transition: box-shadow 0.2s;
+  }
+
+  .section:hover {
+    box-shadow: 0 4px 20px rgba(20,74,212,0.08);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .icon-box {
+    width: 40px; height: 40px;
+    background: linear-gradient(135deg, var(--purple), var(--blue));
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .section h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .section p {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.9;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 12px;
+  }
+
+  ul li {
+    font-size: 15px;
+    color: #374151;
+    padding: 6px 0;
+    padding-right: 24px;
+    position: relative;
+  }
+
+  ul li::before {
+    content: '✓';
+    position: absolute;
+    right: 0;
+    color: var(--blue);
+    font-weight: 700;
+  }
+
+  .highlight {
+    background: linear-gradient(135deg, #f0f4ff, #f5f0ff);
+    border-right: 4px solid var(--blue);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--blue);
+    font-weight: 600;
+  }
+
+  .contact-box {
+    background: linear-gradient(135deg, var(--purple), var(--blue));
+    color: white;
+    border-radius: 16px;
+    padding: 28px 32px;
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  .contact-box h3 { font-size: 18px; margin-bottom: 8px; }
+  .contact-box p { opacity: 0.85; font-size: 14px; }
+  .contact-box a {
+    display: inline-block;
+    margin-top: 16px;
+    background: var(--gold);
+    color: #1a1a2e;
+    font-weight: 700;
+    padding: 10px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 20px;
+    color: var(--muted);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+  }
+
+  footer a { color: var(--blue); text-decoration: none; }
+
+  @media (max-width: 600px) {
+    .section { padding: 20px 18px; }
+    header { padding: 36px 20px 28px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">صنعة <span>PRO</span></div>
+  <p>منصة المهنيين في فلسطين</p>
+  <div class="badge">سياسة الخصوصية · Privacy Policy</div>
+</header>
+
+<main>
+
+  <div class="meta-bar">
+    <span>📅 آخر تحديث: مايو 2026</span>
+    <span>🏢 Rivad Software</span>
+    <span>📍 فلسطين</span>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box">🛡️</div>
+      <h2>مقدمة</h2>
+    </div>
+    <p>نحن في Rivad Software نلتزم بحماية خصوصيتك. توضح هذه السياسة كيفية جمع معلوماتك واستخدامها وحمايتها عند استخدام تطبيق صنعة للمهنيين.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box">📋</div>
+      <h2>المعلومات التي نجمعها</h2>
+    </div>
+    <ul>
+      <li>الاسم الكامل والبريد الإلكتروني ورقم الهاتف عند التسجيل</li>
+      <li>الموقع الجغرافي لعرض الخدمات القريبة منك</li>
+      <li>صور الملف الشخصي ومعرض الأعمال</li>
+      <li>بيانات الاشتراك ومعلومات الفوترة (عبر Apple IAP)</li>
+      <li>سجل الطلبات والتقييمات داخل التطبيق</li>
+      <li>بيانات الإشعارات عبر OneSignal</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box">🎯</div>
+      <h2>كيف نستخدم معلوماتك</h2>
+    </div>
+    <ul>
+      <li>إنشاء وإدارة حسابك في التطبيق</li>
+      <li>ربطك بالعملاء المناسبين في منطقتك</li>
+      <li>إرسال إشعارات متعلقة بطلباتك وخدماتك</li>
+      <li>معالجة الاشتراكات والمدفوعات عبر Apple</li>
+      <li>تحسين جودة الخدمة وتطوير التطبيق</li>
+      <li>حل النزاعات والرد على الشكاوى</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box">🔒</div>
+      <h2>كيف نحمي معلوماتك</h2>
+    </div>
+    <p>نستخدم تقنيات تشفير متقدمة لحماية بياناتك. يتم تخزين جميع البيانات على خوادم Supabase المحمية. لا يمكن لأي موظف الوصول إلى كلمة مرورك. نطبق سياسات Row Level Security (RLS) لضمان أن كل مستخدم يرى بياناته فقط.</p>
+    <div class="highlight">🔐 جميع الاتصالات بين التطبيق وخوادمنا مشفرة بـ HTTPS/TLS</div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box">🤝</div>
+      <h2>مشاركة المعلومات مع أطراف ثالثة</h2>
+    </div>
+    <p>لا نبيع معلوماتك الشخصية لأي طرف ثالث. نشارك البيانات فقط مع مزودي الخدمات الضروريين:</p>
+    <ul>
+      <li>Supabase — لتخزين البيانات</li>
+      <li>Apple App Store — لمعالجة مدفوعات الاشتراك</li>
+      <li>RevenueCat — لإدارة الاشتراكات</li>
+      <li>OneSignal — لإرسال الإشعارات</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box">📍</div>
+      <h2>بيانات الموقع الجغرافي</h2>
+    </div>
+    <p>نطلب إذن الوصول إلى موقعك لعرض المهنيين والخدمات القريبة منك. لا نتتبع موقعك في الخلفية. يمكنك تعطيل هذا الإذن في أي وقت من إعدادات هاتفك.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box">⚙️</div>
+      <h2>حقوقك</h2>
+    </div>
+    <ul>
+      <li>طلب الاطلاع على بياناتك الشخصية المحفوظة</li>
+      <li>تعديل أو تصحيح معلوماتك من الملف الشخصي</li>
+      <li>حذف حسابك ومعلوماتك نهائياً من إعدادات التطبيق</li>
+      <li>إلغاء الاشتراك في أي وقت عبر إعدادات Apple ID</li>
+      <li>تعطيل الإشعارات من إعدادات الهاتف</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box">🔄</div>
+      <h2>الاشتراكات والمدفوعات</h2>
+    </div>
+    <p>جميع مدفوعات الاشتراك تتم عبر Apple App Store. لا نخزن أي بيانات بطاقات ائتمانية. يتجدد الاشتراك تلقائياً ما لم يتم إلغاؤه قبل 24 ساعة من تاريخ التجديد. لإدارة اشتراكك أو إلغائه، اذهب إلى: الإعدادات ← اسمك ← الاشتراكات.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box">🍪</div>
+      <h2>التحديثات على سياسة الخصوصية</h2>
+    </div>
+    <p>قد نحدّث هذه السياسة من وقت لآخر. سيتم إشعارك بأي تغييرات جوهرية عبر التطبيق أو البريد الإلكتروني. استمرارك في استخدام التطبيق بعد التحديث يعني موافقتك على السياسة الجديدة.</p>
+  </div>
+
+  <div class="contact-box">
+    <h3>أسئلة حول خصوصيتك؟</h3>
+    <p>فريقنا جاهز للإجابة على أي استفسار</p>
+    <a href="mailto:support@rivad.ps">تواصل معنا</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Rivad Software — جميع الحقوق محفوظة</p>
+  <p style="margin-top:8px">
+    <a href="./terms-of-use.html">الشروط والأحكام</a> · 
+    <a href="mailto:support@rivad.ps">support@rivad.ps</a>
+  </p>
+</footer>
+
+</body>
+</html>

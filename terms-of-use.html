@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الشروط والأحكام — صنعة للمهنيين</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #144ad4;
+    --purple: #4b236b;
+    --gold: #f9a825;
+    --bg: #f8f9fc;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Cairo', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--purple), var(--blue));
+    color: white;
+    padding: 48px 24px 36px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: -60px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+  }
+
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; right: -40px;
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+  }
+
+  .logo {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .logo span {
+    color: var(--gold);
+  }
+
+  header p {
+    font-size: 14px;
+    opacity: 0.8;
+    position: relative;
+  }
+
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-top: 12px;
+    position: relative;
+  }
+
+  main {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+
+  .meta-bar {
+    display: flex;
+    gap: 24px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 24px;
+    margin-bottom: 32px;
+    font-size: 13px;
+    color: var(--muted);
+    flex-wrap: wrap;
+  }
+
+  .meta-bar span { display: flex; align-items: center; gap: 6px; }
+
+  .section {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+    transition: box-shadow 0.2s;
+  }
+
+  .section:hover {
+    box-shadow: 0 4px 20px rgba(20,74,212,0.08);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .section-num {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--purple), var(--blue));
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+
+  .section h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .section p {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.9;
+  }
+
+  .highlight {
+    background: linear-gradient(135deg, #f0f4ff, #f5f0ff);
+    border-right: 4px solid var(--blue);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--blue);
+    font-weight: 600;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 20px;
+    color: var(--muted);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+  }
+
+  footer a { color: var(--blue); text-decoration: none; }
+
+  @media (max-width: 600px) {
+    .section { padding: 20px 18px; }
+    header { padding: 36px 20px 28px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">صنعة <span>PRO</span></div>
+  <p>منصة المهنيين في فلسطين</p>
+  <div class="badge">الشروط والأحكام · Terms of Use</div>
+</header>
+
+<main>
+
+  <div class="meta-bar">
+    <span>📅 آخر تحديث: مايو 2026</span>
+    <span>🏢 Rivad Software</span>
+    <span>📍 فلسطين</span>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h2>قبول الشروط</h2>
+    </div>
+    <p>مرحباً بك في تطبيق صنعة للمهنيين. باستخدامك لهذا التطبيق، فإنك توافق على الالتزام بهذه الشروط والأحكام. إذا كنت لا توافق، يرجى عدم استخدام التطبيق.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <h2>مسؤوليات المستخدم</h2>
+    </div>
+    <p>يلتزم المستخدم بتقديم معلومات صحيحة ودقيقة عند التسجيل. المستخدم مسؤول عن الحفاظ على سرية كلمة المرور الخاصة به. يمنع استخدام التطبيق لأي أغراض احتيالية أو غير قانونية.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h2>حقوق الملكية الفكرية</h2>
+    </div>
+    <p>جميع المحتويات الموجودة في هذا التطبيق محمية بموجب حقوق النشر والعلامات التجارية والقوانين الأخرى. لا يجوز نسخ أو توزيع أي جزء من المحتوى دون إذن كتابي.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <h2>إلغاء الخدمة وإنهاء الحساب</h2>
+    </div>
+    <p>يحق لنا تعليق أو إنهاء حساب أي مستخدم يخالف هذه الشروط دون إشعار مسبق. يمكنك حذف حسابك في أي وقت من خلال إعدادات الملف الشخصي.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <h2>الاشتراك</h2>
+    </div>
+    <p>عند إتمام عملية الاشتراك، يحق للمستخدم طلب الإلغاء واسترداد المبلغ كاملاً خلال 7 أيام من تاريخ الاشتراك، شريطة ألا يكون قد استفاد من مزايا الاشتراك. لا يُقبل الاسترداد بعد انتهاء هذه المدة.</p>
+    <div class="highlight">🔄 يتجدد الاشتراك تلقائياً كل شهر بسعر 9.99 دولار ما لم يتم إلغاؤه قبل 24 ساعة من تاريخ التجديد.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">6</div>
+      <h2>إلغاء الاشتراك</h2>
+    </div>
+    <p>يحق للمشترك إلغاء الاشتراك في أي وقت من خلال إعدادات Apple ID ← Subscriptions. لا يمكن استرداد المبلغ المدفوع بعد ذلك. جميع البيانات السابقة التي وُضعت أثناء تفعيل الاشتراك لن يتم حذفها.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">7</div>
+      <h2>الالتزام بالمواعيد</h2>
+    </div>
+    <p>يجب على المشترك الالتزام بالمواعيد المحددة في التطبيق. في حال عدم الالتزام بالمواعيد، سيتم تعليق الحساب. يرجى أخذ الطلبات والموافقة عليها بعين الاعتبار، ولا يجب التخلف عن الطلب إلا بعد الاتفاق مع الطرف الثاني.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">8</div>
+      <h2>التقييمات والشكاوى</h2>
+    </div>
+    <p>يُمنع المستخدم من كتابة أي تعليقات مسيئة أو مضللة، وعدم رفع شكوى على الطرف الثاني بغير حق. في حال ثبوت ذلك سيتم تعليق الحساب.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">9</div>
+      <h2>شروط المحتوى</h2>
+    </div>
+    <p>يلتزم المهنيون بأن تكون جميع الخدمات والصور والأوصاف المنشورة صادقة وذات صلة بالخدمة المقدمة. يُمنع نشر أي محتوى مخالف للقانون أو الآداب العامة أو حقوق الآخرين، وسيُحذف الحساب فوراً في حال المخالفة.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">10</div>
+      <h2>التعديلات على الشروط</h2>
+    </div>
+    <p>نحتفظ بالحق في تعديل هذه الشروط في أي وقت. سيتم إشعار المستخدمين بأي تغييرات جوهرية. استمرارك في استخدام التطبيق يعني موافقتك على الشروط المعدلة.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">11</div>
+      <h2>حل النزاعات</h2>
+    </div>
+    <p>في حال نشوء أي خلاف بين المستخدمين، يمكن إبلاغ فريق الدعم لدراسة الحالة والتدخل عند الضرورة. نسعى إلى حل النزاعات بشكل ودّي، ونحتفظ بحق اتخاذ الإجراء المناسب بحق أي طرف مخالف.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">12</div>
+      <h2>المسؤولية عن جودة الخدمة</h2>
+    </div>
+    <p>تعمل المنصة بصفة وسيط بين العميل ومزود الخدمة، وتلتزم بمراجعة أي شكوى خلال 48 ساعة من تقديمها عبر نظام الشكاوى المدمج في التطبيق. في حال ثبوت الإخلال بجودة الخدمة أو التقصير من قِبل المهني، تحتفظ المنصة بحق تعليق حسابه أو إلغائه نهائياً. لا تتحمل المنصة أي التزام بالتعويض المالي المباشر، غير أنها تسعى للوساطة بين الطرفين للوصول إلى حل مرضٍ.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">13</div>
+      <h2>التحقق من هوية المهنيين</h2>
+    </div>
+    <p>تخضع جميع حسابات المهنيين لمراجعة يدوية من فريق المنصة قبل تفعيلها، ولا يُسمح بممارسة أي نشاط قبل اكتمال هذه المراجعة. لا تشترط المنصة رفع شهادات أو وثائق رسمية في الوقت الحالي، وبالتالي لا تضمن مستوى كفاءة معيناً لأي مهني. تقع على عاتق العميل مسؤولية التحقق من ملاءمة المهني لمهمته من خلال مراجعة تقييماته وسجل عمله قبل التعاقد معه.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">14</div>
+      <h2>الأضرار المادية</h2>
+    </div>
+    <p>لا تتحمل المنصة أي مسؤولية عن الأضرار المادية أو المعنوية التي قد تنجم عن تنفيذ الخدمة أو الإخلال بها. في حال وقوع ضرر، يحق للعميل تقديم شكوى رسمية عبر التطبيق، وستتولى المنصة التواصل مع المهني والضغط باتجاه حل النزاع. تتم أي تسوية مالية ناجمة عن الضرر مباشرةً بين العميل والمهني، دون أن تكون المنصة طرفاً ملزماً بأي تعويض.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">15</div>
+      <h2>سياسة إلغاء الطلبات</h2>
+    </div>
+    <p>يحق للعميل إلغاء طلبه مجاناً وبدون أي تبعات في حال تم الإلغاء قبل ساعتين أو أقل من الموعد المحدد. أما الإلغاء بعد هذه المدة، أو بعد توجه المهني لتنفيذ المهمة، فيُسجَّل كإخلال بالالتزام على حساب العميل. في حال تكرار الإلغاء المتأخر ثلاث مرات، يتعرض الحساب للتعليق التلقائي. يُطبَّق الإجراء ذاته على المهني في حال إلغائه للطلبات المقبولة دون إشعار مسبق كافٍ.</p>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Rivad Software — جميع الحقوق محفوظة</p>
+  <p style="margin-top:8px">
+    <a href="./privacy-policy.html">سياسة الخصوصية</a> · 
+    <a href="mailto:support@rivad.ps">تواصل معنا</a>
+  </p>
+</footer>
+
+</body>
+</html>
