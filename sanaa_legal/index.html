@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>صنعة للمهنيين — المعلومات القانونية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #144ad4;
+    --purple: #4b236b;
+    --gold: #f9a825;
+    --bg: #f8f9fc;
+    --border: #e5e7eb;
+    --muted: #6b7280;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Cairo', sans-serif;
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .logo {
+    font-size: 36px;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--purple), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+
+  .logo span { color: var(--gold); -webkit-text-fill-color: var(--gold); }
+
+  header p {
+    color: var(--muted);
+    font-size: 15px;
+  }
+
+  .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 36px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
+    min-width: 220px;
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--purple), var(--blue));
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(20,74,212,0.12);
+    border-color: transparent;
+  }
+
+  .card:hover::before { opacity: 1; }
+
+  .card-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+  }
+
+  .card p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .card .arrow {
+    display: inline-block;
+    margin-top: 20px;
+    background: linear-gradient(135deg, var(--purple), var(--blue));
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  footer {
+    margin-top: 56px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  footer a { color: var(--blue); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">صنعة <span>PRO</span></div>
+  <p>منصة المهنيين في فلسطين · Rivad Software</p>
+</header>
+
+<div class="cards">
+
+  <a class="card" href="./privacy-policy.html">
+    <span class="card-icon">🛡️</span>
+    <h2>سياسة الخصوصية</h2>
+    <p>كيف نجمع بياناتك ونحميها ونستخدمها</p>
+    <span class="arrow">اقرأ السياسة ←</span>
+  </a>
+
+  <a class="card" href="./terms-of-use.html">
+    <span class="card-icon">📋</span>
+    <h2>الشروط والأحكام</h2>
+    <p>شروط استخدام التطبيق وحقوق المستخدمين</p>
+    <span class="arrow">اقرأ الشروط ←</span>
+  </a>
+
+</div>
+
+<footer>
+  <p>© 2026 Rivad Software — جميع الحقوق محفوظة</p>
+  <p style="margin-top:6px">
+    <a href="mailto:support@rivad.ps">support@rivad.ps</a>
+  </p>
+</footer>
+
+</body>
+</html>
